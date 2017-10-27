@@ -1,5 +1,4 @@
 
-
  * {
  box-sizing: border-box;
 }
@@ -11,19 +10,19 @@ background-color:#00FF00;
  background-color:#00FF00;
  padding:10;
  float:left;
- width:30%;/*The width is 20%, by default*/
+ width:20%;/*The width is 20%, by default*/
 }
 .main {
  background-color:#00FF00;
  padding:10;
  float:left;
- width:20%;/*The width is 60%, by default*/
+ width:40%;/*The width is 60%, by default*/
 }
 .right {
  background-color:#00FF00;
  padding:10;
  float:left;
- width:50%;/*The width is 20%, by default*/
+ width:40%;/*The width is 20%, by default*/
 }
 /*Use a media query to add a break point at 800px:*/
 @media (max-width:800px) {
@@ -38,7 +37,7 @@ background-color:#00FF00;
   background-repeat:no-repeat;
   background-attachment:fixed;
   font-family:Arial;
-  font-size:10px;
+  font-size:11px;
   color:Black;
  }
 a:link {
@@ -79,3 +78,42 @@ a:active {
    padding: 0 4px 0 6px;
    text-decoration:none;
 }
+#overlay {
+ 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 2;
+     opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+
+#text{
+    position: fixed;
+    top: 5%;
+    left: 60%;
+     color:Black;
+   background-color: transparent;
+   cursor: text;
+   border: 0px solid #4080ff;
+   border-radius: 4px;
+   font-size: 18px;
+    font-weight: 1000;
+    text-shadow: 2px 2px 4px #00FF00;
+   height: 28px;
+   width: 350px;
+   padding: 0 4px 0 6px;
+   text-decoration:none;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+       opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+
+
